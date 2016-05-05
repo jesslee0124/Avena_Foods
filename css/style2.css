@@ -1,0 +1,1768 @@
+/* COLOR BLOCK
+White: #ffffff
+Orange: #cd480b
+Grey: #53453d;
+Brown: #7f4f21
+Black: #403124
+Menu: #4f4c4d
+*/
+
+@font-face 
+{
+  font-family: 'Rockwell';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../src/fonts/Rockwell/RockwellStd.otf') format('opentype');
+}
+
+@font-face 
+{
+  font-family: 'Rockwell Light';
+  font-style: lighter;
+  font-weight: lighter;
+  src: url('../src/fonts/Rockwell/RockwellStd-Light.otf') format('opentype');
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  color: #ffffff;
+  font-size: 13px;
+  font-family: Rockwell;
+  overflow-x: hidden;
+}
+
+/* Header */
+.header
+{
+  height: 80px;
+  width: 100%;
+  position: fixed;
+  background: white;
+  top: 0;
+  z-index: 1500;
+
+}
+
+.header-logo
+{
+  display: block;
+  position: absolute;
+  left: 40px;
+  top: 11.5px;
+}
+
+.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-top: 30px;
+    overflow: hidden;
+    float: right;
+}
+
+.topnav li {
+    display: inline;
+}
+
+.topnav li.hidden a {
+  width: 220px;
+  display: none;
+}
+
+.topnav li.hidden a:after {
+  font-family: FontAwesome;
+  content: '\f0c9';
+  text-align: right;
+  float: right;
+}
+
+.topnav li a {
+  display: block;
+  float: left;
+  padding: 8px 16px 4px 16px;
+  color: #53453d;
+  text-decoration: none;
+  text-align: center;
+  font-size: 1.4em;
+  border-right: 1px #CECAC8 solid;
+}
+
+.topnav li:last-child a {
+  border-right: none;
+}
+
+.topnav .menu li a:hover {
+  font-weight: bolder;
+  color: white;
+  background-color: #87CEEB;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  
+  -webkit-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  
+  width: 100%;
+}
+
+.news {
+  position: relative;
+  margin-top: 80px;
+  height: 305px;
+  background-image: url('../img/bulk/news.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 77% 53%;
+  z-index: -1; 
+}
+
+.about {
+  position: relative;
+  background-color: green;
+  height: 730px;
+  background-image: url('../img/bulk/about.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 6% 45%;
+}
+
+.bulk {
+  background-color: pink;
+  height: 520px;
+  background-image: url('../img/bulk/bulk.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 45% 45%;
+}
+
+.protocol {
+  position: relative;
+  background-color: grey;
+  height: 1092.3px;
+  background-image: url('../img/bulk/protocol.jpg');
+  background-repeat: no-repeat;
+  background-size: 2350px; 
+  background-position: 35% 0%;
+}
+
+  /* for protocol bg fix */
+@media only screen and (min-width: 2000px){ 
+
+  .protocol
+  {
+    background-size: 3500px;
+    background-position: 1% 10%;
+  }
+
+}
+
+.protocol-sub {
+  position: relative;
+  background-color: #fffbf2;
+  height: 693.5px;
+}
+
+.protocol-sub a {
+    display: block;
+    width: 1030px;
+    height: 600px;
+    margin: 40px auto;
+}
+
+.protocol-sub img {
+  
+  position: absolute;
+  width: 1030px;
+  height: 613.5px;
+}
+
+.learn {
+  position: relative;
+  background-color: skyblue;
+  height: 687.6px;
+  background-image: url('../img/bulk/learn.jpg');
+  background-repeat: no-repeat;
+  background-size: cover; 
+  background-position: 100% 38%;
+}
+
+.contact {
+  position: relative;
+  background-color: blue;
+  height: 396.25px;
+  background-image: url('../img/bulk/contact.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 47% 53%;
+}
+
+
+/* NEWS SECTION */
+.news .wrapper {
+  background-color: rgba(48, 21, 21, 0.42);
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.news .news-gather {
+  position: absolute;
+  width: 900px;
+  height: 172px;
+  left: 50%;
+  top: 50%;
+  margin: -89px 0 0 -460px;
+  text-align: left;
+}
+
+.news-title {
+  position: absolute;
+  top: 20.45291%;
+  left: 7.29167%;
+  right: 7.29167%;
+  width: 85.375%;
+}
+
+.news-title ul {
+  padding: 0 0;
+  margin: 0 0;
+  font-size: 369.230769%;
+  font-weight: bold;
+}
+
+.news-title ul h1
+{
+  font-size: 1em;
+  margin: 0;
+}
+
+.news-title ul li {
+  width: 834px;
+  font-size: 54.16667%;
+  margin-left: 2.68473%;
+  font-weight: normal;
+}
+
+/* ABOUT SECTION */
+.about-us {
+  position: absolute;
+  top: 43.68085%;
+  left: 6.33333%;
+  right: 50%;
+  width: 80%;
+}
+
+.about table, th, td {
+  text-align: left;
+}
+
+.about table tr th div {
+  overflow: hidden;
+  height: 45px;
+  margin-bottom: 20px;
+}
+
+.about table tr td > div {
+  overflow: hidden;
+  height: 40px;
+}
+
+.about table tr th {
+  font-size: 369.23077%;
+  font-weight: bold;
+}
+
+.about table tr th div {
+  width: 211px;
+  border: 1px solid white;
+  padding: 10px 20px 10px 20px;
+  text-align: center;
+}
+
+.about table tr td {
+  font-size: 169.23077%;
+  font-weight: bold;
+  vertical-align: middle !important;
+}
+
+.about table tr td a:hover,
+.about table tr td a:visited,
+.about table tr td a:link,
+.about table tr td a:active {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.about table tr td img {
+  position: relative;
+  top: 6px;
+}
+
+/* BULK SECTION */
+.bulk p {
+  position: relative;
+  color: #7f4f21;
+  font-size: 384.61538%;
+  font-weight: bold;
+  text-align: center;
+  bottom: 20px;
+}
+
+/* PROTOCOL SECTION */
+.protocol .top {
+  position: relative;
+  width: 800px;
+  height: 524px;
+  margin: 0 auto;
+}
+
+.protocol .top ul {
+  font-size: 195%;
+  font-weight: bold;
+  text-decoration: none;
+  list-style: none;
+  width: 770px;
+  left: 45px;
+  text-align: center;
+  vertical-align: center;
+}
+
+.protocol .top ul li div:before {
+  content: "";
+  padding-left: 33px;
+  padding-bottom: 4px;
+}
+
+.protocol .top ul li {
+  text-align: left;
+}
+
+.protocol .top ul li .fa-circle {
+  font-size: 40%;
+  margin-right: 40px;
+}
+
+.protocol .top ul li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.protocol .top ul li:nth-child(1) ,
+.protocol .top ul li:nth-child(4) ,
+.protocol .top ul li:nth-child(7) ,
+.protocol .top ul li:nth-child(9) {
+  margin-top: 40px;
+}
+
+.protocol .top ul li a:hover,
+.protocol .top ul li a:visited,
+.protocol .top ul li a:link,
+.protocol .top ul li a:active {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.protocol .heart {
+  position: absolute;
+  width: 300px;
+  top: 128%;
+  right: 65%;
+}
+
+.protocol .heart table td {
+  width: 80px;
+  padding-bottom: 23px;
+  text-align: center;
+}
+
+.protocol .heart table tr img {
+  width: 125;
+  height: 125px;
+}
+
+/* LEARN SECTION */
+.learning-centre {
+  position: absolute;
+  color: #403124;
+  right: 3.54167%;
+  top: 15.17976%;
+}
+
+.learn table tr th div {
+  overflow: hidden;
+  height: 60px;
+}
+
+.learn table tr td > div {
+  overflow: visible;
+  height: 40px;
+}
+
+.learn table tr:nth-child(6) td div {
+  height: 65px;
+}
+
+.learn table tr th {
+  font-size: 369.23077%;
+  font-weight: bold;
+  padding-bottom: 40px;
+  text-align: center;
+  vertical-align: top !important;
+}
+
+.learn table tr th div {
+  width: 378px;
+  border: 1px solid #403124;
+  padding: 14px 14px 0 14px;
+  margin-right: 50px;
+}
+
+.learn table tr td div {
+  margin-left: 40px;
+}
+
+.learn table tr td {
+  font-size: 199.69231%;
+  font-weight: bold;
+  vertical-align: middle !important;
+  text-indent: -20px;
+}
+
+.learn table tr td a:hover,
+.learn table tr td a:visited,
+.learn table tr td a:link,
+.learn table tr td a:active {
+  text-decoration: none;
+  color: #403124;
+}
+
+.learn table tr td:nth-child(1) .fa-circle {
+  font-size: 35%;
+  vertical-align: middle;
+  margin-right: 12px;
+}
+
+/* LEARN SECTION - MODAL */
+.learn .modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
+  z-index: 9999;
+}
+
+.learn .modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 70%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+.learn .close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.learn .close:hover,
+.learn .close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.learn .modal-header {
+  padding: 2px 16px;
+  background-color: #87CEEB;
+  color: white;
+}
+
+.learn .modal-header h2 {
+  font-size: 250%;
+  padding-left: 40px;
+}
+
+.learn .modal-body {
+  padding: 2px 16px;
+}
+
+.learn .modal-body form {
+  max-width: 50%;
+  text-align: center;
+  margin: 20px auto;
+}
+
+.learn .modal-body input, 
+.learn .modal-body textarea {
+  border: 0;
+  outline: 0;
+  padding: 1em;
+  border-radius: 8px;
+  display: block;
+  width: 100%;
+  margin-top: 1em;
+  resize: none;
+  box-shadow: 0 1px 1px rgba(1, 1, 1, 0.1);
+  font-size: 140%;
+}    
+
+.learn .modal-body .submit {
+  color: white; 
+  background-color: #87CEEB;
+  cursor: pointer;
+  width: 30%;
+  margin: 30px auto;
+}
+
+.learn .modal-body .submit:hover {
+  background-color: #93d2ed;
+}
+
+/* CONTACT SECTION */
+.contact-us {
+  position: absolute;
+  color: #403124;
+  left: 7.60417%;
+  top: 19.84127%;
+}
+
+.contact table tr th div {
+  overflow: hidden;
+  height: 45px;
+  width: 280px;
+  border: 1px solid #403124;
+  text-align: center;
+  padding-top: 12px;
+  padding-bottom: 10px;
+}
+
+.contact table tr td > div {
+  overflow: visible;
+  height: 45px;
+  width: 320px;
+}
+
+.contact table tr th {
+  font-size: 369.23077%;
+  font-weight: bold;
+  padding-bottom: 30px;
+  vertical-align: top !important;
+}
+
+.contact table tr td {
+  font-size: 199.69231%;
+  font-weight: bold;
+  vertical-align: middle !important;
+}
+
+.contact table tr td:nth-child(1) {
+  width: 310px;
+}
+
+.contact table tr td a:hover,
+.contact table tr td a:visited,
+.contact table tr td a:link,
+.contact table tr td a:active {
+  text-decoration: none;
+  color: #403124;
+}
+
+.contact table tr td:nth-child(1) .fa-circle,
+.contact table tr td:nth-child(2) .fa-circle{
+  font-size: 35%;
+  vertical-align: middle;
+  margin-right: 19px;
+}
+
+.contact table tr:nth-child(4) td div .soon,
+.contact table tr:nth-child(2) td:nth-child(2) div .soon {
+  margin-left: 30px;
+}
+
+.contact .fa-twitter:hover {
+  color: #4099FF;
+  cursor: pointer;
+}
+
+.contact .fa-pinterest:hover {
+  color: #cb2027;
+  cursor: pointer;
+}
+
+.contact .fa-facebook:hover {
+  color: #3b5998;
+  cursor: pointer;
+}
+
+.contact .fa-twitter,
+.contact .fa-pinterest,
+.contact .fa-facebook {
+  padding-left: 5px
+}
+
+  .social_wrapper
+  {
+    margin-bottom: 10px
+  }
+
+  .social_icons
+  {
+    margin-left: 26px;
+  }
+
+
+@media only screen and (max-width: 1350px) {
+  .learn .modal {
+    padding-top: 5px;  
+  }
+
+  .learn .modal-body input, 
+  .learn .modal-body textarea {
+    height: 50%;
+    font-size: 100%;
+  }    
+
+  .learn .modal-body textarea {
+    height: 125px;
+  }
+}
+
+  /* iPhone 6 Plus and smaller */
+@media only screen and (min-width: 320px) and (max-width: 479px){ 
+
+  .header
+  {
+    height: 50px;
+  }
+
+  .header-logo
+  {
+    top: 7.5px;
+    left: 10px;
+  }
+
+  .header-logo > a > img
+  {
+    height: 30px;
+  }
+
+  .topnav {
+    padding-top: 10px;
+  }
+
+  .topnav li {
+    display: block;
+  }
+
+  .topnav li a {
+    border: none;
+    display: none;
+  }
+
+  .topnav li.hidden a {
+    display: block;
+  }
+
+  .topnav:hover li a {
+    display: block;
+    width: 200px;
+  }
+
+  .topnav .menu li a {
+    background-color: white;
+    font-size: 1.2em;
+  }
+
+  .topnav .menu li a:hover {
+    background-color: #87CEEB;
+  }
+
+  .menu-btn
+  {
+    font-size: 1.0em;
+    padding: 0px;
+    position: absolute;
+    top: 7.5px;
+    right: -40px;
+  }
+
+  .menu-content
+  {
+    top: 42px;
+    right: -60px;
+    min-width: 140px;
+  }
+
+  /* news section */
+
+  .news
+  {
+    margin-top: 50px;
+    background-position: 50% 100%;
+    background-image: url('../img/bulk/news_mobile.jpg');
+  }
+
+  .news .news-gather {
+    position: relative;
+    width: 90%;
+    margin: 10px auto;
+    top: 0;
+    left: 0;
+}
+
+  .news-title
+  {
+    font-size: .6em;
+    top: 0;
+  }
+
+  .news-title ul
+  {
+    text-align: center;
+  }
+
+  .news-title ul h1
+  {
+    font-size: 0.9em;
+    margin-top: 35px;
+    margin-bottom: 10px;
+  }
+
+  .news-title ul li 
+  {
+    width: 100%;
+    text-align: left;
+    padding-bottom: 5px;
+    line-height: 1.5em;
+  }
+
+  /* about us section */
+
+  .about
+  {
+    background-image: url('../img/bulk/about_mobile.jpg');
+  }
+
+  .about, .learn, .contact
+  {
+    height: 430px;
+    background-size: 850px;
+    background-position: 0% 95%;
+  }
+  .about-us, .learning-centre, .contact-us
+  {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 80%;
+    margin: 20px auto;
+    font-size: 0.8em;
+  }
+
+  .about table tr th div
+  {
+    font-size: 0.7em;
+    width: 80%;
+    line-height: 2em;
+    padding: 0;
+    margin: 20px auto;
+  }
+
+  /* bulk section */
+
+  .bulk
+  {
+    height: 240px;
+    background-size: 480px;
+    background-position: 50% 23%;
+    background-image: url('../img/bulk/bulk_mobile.jpg');
+  }
+
+  .bulk p
+  {
+    font-size: 2.5em;
+    font-weight: normal;
+    width: 80%;
+    margin: 0 auto;
+    bottom: 0;
+    top: 15px;
+  }
+
+  /* protocol section */
+
+  .protocol
+  {
+    height: 550px;
+    background-size: cover;
+    background-position: 0% 50%;
+    background-image: url('../img/bulk/protocol_mobile.jpg');
+  }
+
+  .protocol .top
+  {
+    width: 75%;
+  }
+
+  .protocol .top ul
+  {
+    font-size: 1.2em;
+    padding: 0;
+    width: 100%;
+    text-align: left;
+    line-height: 1.6em;
+    margin-left: 15px;
+  }
+  .protocol .top ul li .fa-circle
+  {
+    margin-right: 5px;
+    margin-left: -20px;
+  }
+
+  .protocol .top ul li:nth-child(1), .protocol .top ul li:nth-child(4), .protocol .top ul li:nth-child(7), .protocol .top ul li:nth-child(9)
+  {
+    margin-top: 15px;
+  }
+
+  .protocol .top ul li div:before
+  {
+    padding-left: 0px;
+  }
+
+  .protocol .heart
+  {
+    display: none;
+  }
+
+  /* protocol sub section */
+  .protocol-sub
+  {
+    height: 285.7px;
+  }
+  .protocol-sub a
+  {
+    width: 90%;
+    height: 90%;
+    margin:10px auto;
+  }
+
+  .protocol-sub img
+  {
+    width: 90%;
+    height: 90%;
+  }
+
+  /* learning section */
+
+  .learn
+  {
+    height: 550px;
+  }
+
+  .learn table tr th, .contact table tr th
+  {
+    padding-bottom: 0;
+    display: block;
+  }
+
+  .learn table tr th div, .contact table tr th div
+  {
+    width: 90%;
+    line-height: 2.5em;
+    font-size: 0.7em;
+    padding: 0;
+    margin: 20px auto;
+  }
+
+  .learn table tr td > div
+  {
+    height: 20px;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+  }
+
+  .learn table tr:nth-child(7) td div
+  {
+    height: 45px;
+
+  }
+
+  .learn table tr:nth-child(6) td div
+  {
+    margin-bottom: 0;    
+  }
+
+  .learning-centre table, .contact-us table
+  {
+    margin: 0 auto;
+  }
+
+  .learn .modal-header h2 {
+    font-size: 213%;
+    padding-left: 13px;
+  }
+
+  .learn .modal-body {
+    height: 450px;
+  }
+
+  .learn .moda-body form {
+    margin: 20px 0 30px 21px;
+  }
+
+  .learn .modal-body .submit {
+    position: absolute;
+    width: 130px;
+    height: 40px;
+    left: 50%;
+    top: 50%;
+    margin: 208px 0 0 -66px;
+    padding: 0;
+  }
+
+  /* contact us section */
+
+  .contact
+  {
+    background-image: url('../img/bulk/contact_mobile.jpg');
+  }
+
+  .contact table tr th div
+  {
+    line-height: 2em;
+    width: 100%
+  }
+
+  .contact table tr td > div
+  {
+    width: 100%;
+  }
+
+  .contact-us table
+  {
+        width:100%;
+  }
+    
+   .contact-us td{
+        display:block;
+        width:100%;
+    }
+    
+  .contact-us  tr{
+        display:block;
+    }
+
+    .contact table tr td:nth-child(1)
+    {
+      width: 100%;
+    }
+  .social_wrapper
+  {
+    margin-bottom: 10px
+  }
+
+  .social_icons
+  {
+    margin-left: 26px;
+  }
+
+
+
+ }
+
+  /* Regular iPad and iPad mini or other tablets */
+@media only screen and (min-width: 480px) and (max-width: 767px){ 
+
+  .header
+  {
+    height: 50px;
+  }
+
+    .header-logo
+  {
+    top: 7.5px;
+    left: 10px;
+  }
+
+  .header-logo > a > img
+  {
+    height: 30px;
+  }
+
+  .topnav {
+    padding-top: 10px;
+  }
+
+  .topnav li {
+    display: block;
+  }
+
+  .topnav li a {
+    border: none;
+    display: none;
+  }
+
+  .topnav li.hidden a {
+    display: block;
+  }
+
+  .topnav:hover li a {
+    display: block;
+    width: 200px;
+  }
+
+  .topnav .menu li a {
+    background-color: white;
+    font-size: 1.2em;
+  }
+
+  .topnav .menu li a:hover {
+    background-color: #87CEEB;
+  }
+
+  .menu-btn
+  {
+    font-size: 1.0em;
+    padding: 0px;
+    position: absolute;
+    top: 7.5px;
+    right: -40px;
+  }
+
+  .menu-content
+  {
+    top: 42px;
+    right: -60px;
+    min-width: 140px;
+  }
+
+  /* news section */
+
+  .news
+  {
+    margin-top: 50px;
+    background-position: 50% 50%;
+      background-image: url('../img/bulk/news_mobile.jpg');
+  }
+
+  .news .news-gather {
+    position: relative;
+    width: 90%;
+    margin: 10px auto;
+    top: 0;
+    left: 0;
+}
+
+  .news-title
+  {
+    font-size: .6em;
+    top: 0;
+  }
+
+  .news-title ul
+  {
+    text-align: center;
+  }
+
+  .news-title ul h1
+  {
+    font-size: 0.9em;
+    margin-top: 35px;
+    margin-bottom: 10px;
+  }
+
+  .news-title ul li 
+  {
+    width: 100%;
+    text-align: left;
+    padding-bottom: 5px;
+    line-height: 1.5em;
+  }
+
+  /* about us section */
+
+  .about
+  {
+    background-image: url('../img/bulk/about_mobile.jpg');
+  }
+
+  .about, .learn, .contact
+  {
+    height: 430px;
+    background-size: 850px;
+    background-position: 0% 95%;
+  }
+  .about-us, .learning-centre, .contact-us
+  {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 80%;
+    margin: 20px auto;
+    font-size: 0.8em;
+  }
+
+  .about table, th, td
+  {
+    width: 100%
+  }
+
+  .about table tr th div
+  {
+    font-size: 0.7em;
+    width: 80%;
+    line-height: 2em;
+    padding: 0;
+    margin: 20px auto;
+  }
+
+  .about table tr td > div
+  {
+    margin: 0 45px;
+  }
+
+  /* bulk section */
+
+  .bulk
+  {
+    height: 240px;
+    background-size: cover;
+    background-position: 50% 40%;
+    background-image: url('../img/bulk/bulk_mobile.jpg');
+  }
+
+  .bulk p
+  {
+    font-size: 2.5em;
+    font-weight: normal;
+    width: 80%;
+    margin: 0 auto;
+    bottom: 0;
+    top: 15px;
+  }
+
+  /* protocol section */
+
+  .protocol
+  {
+    height: 340px;
+    background-size: 1000px;
+    background-position: 20% 50%;
+    background-image: url('../img/bulk/protocol_mobile.jpg');
+  }
+
+  .protocol .top
+  {
+    width: 75%;
+    height: 340px;
+  }
+
+  .protocol .top ul
+  {
+    font-size: 1.2em;
+    padding: 0;
+    width: 100%;
+    text-align: left;
+    line-height: 1.6em;
+    margin-left: 15px;
+  }
+  .protocol .top ul li .fa-circle
+  {
+    margin-right: 5px;
+    margin-left: -20px;
+  }
+
+  .protocol .top ul li:nth-child(1), .protocol .top ul li:nth-child(4), .protocol .top ul li:nth-child(7), .protocol .top ul li:nth-child(9)
+  {
+    margin-top: 15px;
+  }
+
+  .protocol .top ul li div:before
+  {
+    padding-left: 0px;
+  }
+
+  .protocol .heart
+  {
+    display: none;
+  }
+
+  /* protocol sub section */
+  .protocol-sub
+  {
+    height: 285.7px;
+  }
+  .protocol-sub a
+  {
+    width:443.4px;
+    height: 255px;
+    margin:10px auto;
+  }
+
+  .protocol-sub img
+  {
+    width:443.4px;
+    height: 255px;
+  }
+
+  /* learning section */
+
+  .learn
+  {
+    height: 550px;
+  }
+
+  .learn table tr th, .contact table tr th
+  {
+    padding-bottom: 0;
+    display: block;
+  }
+
+  .learn table tr th div, .contact table tr th div
+  {
+    width: 90%;
+    line-height: 2.5em;
+    font-size: 0.7em;
+    padding: 0;
+    margin: 20px auto;
+  }
+
+  .learn table tr td > div
+  {
+    height: 20px;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+  }
+
+  .learn table tr:nth-child(7) td div
+  {
+    height: 45px;
+
+  }
+
+  .learn table tr:nth-child(6) td div
+  {
+    margin-bottom: 0;    
+  }
+
+  .learning-centre table, .contact-us table
+  {
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .learn .modal-header h2 {
+    font-size: 213%;
+    padding-left: 13px;
+  }
+
+  .learn .modal-body {
+    height: 450px;
+  }
+
+  .learn .moda-body form {
+    margin: 20px 0 30px 21px;
+  }
+
+  .learn .modal-body .submit {
+    position: absolute;
+    width: 130px;
+    height: 40px;
+    left: 50%;
+    top: 50%;
+    margin: 208px 0 0 -66px;
+    padding: 0;
+  }
+
+  /* contact us section */
+
+  .contact
+  {
+    background-image: url('../img/bulk/contact_mobile.jpg');
+  }
+
+  .contact table tr th div
+  {
+    line-height: 2em;
+    width: 100%
+  }
+
+  .contact table tr td > div
+  {
+    width: 100%;
+  }
+
+  .contact-us table
+  {
+        width:100%;
+  }
+    
+   .contact-us td{
+        display:block;
+        width:100%;
+    }
+    
+  .contact-us  tr{
+        display:block;
+        /*margin-bottom:30px;*/
+    }
+
+  .social_wrapper
+  {
+    margin-bottom: 10px
+  }
+
+  .social_icons
+  {
+    margin-left: 26px;
+  }
+
+
+ }
+
+ /* Laptops and small browsers */
+@media only screen and (min-width: 768px) and (max-width: 991px){ 
+
+  .header
+  {
+    height: 50px;
+  }
+
+  .header-logo
+  {
+    top: 7.5px;
+    left: 10px;
+  }
+
+  .header-logo > a > img
+  {
+    height: 30px;
+  }
+
+  .topnav {
+    padding-top: 10px;
+  }
+
+  .topnav li {
+    display: block;
+  }
+
+  .topnav li a {
+    border: none;
+    display: none;
+  }
+
+  .topnav li.hidden a {
+    display: block;
+  }
+
+  .topnav:hover li a {
+    display: block;
+    width: 200px;
+  }
+
+  .topnav .menu li a {
+    background-color: white;
+    font-size: 1.2em;
+  }
+
+  .topnav .menu li a:hover {
+    background-color: #87CEEB;
+  }
+
+  .menu-btn
+  {
+    font-size: 1.0em;
+    padding: 0px;
+    position: absolute;
+    top: 7.5px;
+    right: -40px;
+  }
+
+  .menu-content
+  {
+    top: 42px;
+    right: -60px;
+    min-width: 140px;
+  }
+
+  /* news section */
+
+  .news
+  {
+    margin-top: 50px;
+    background-position: 50% 50%;
+      background-image: url('../img/bulk/news_mobile.jpg');
+  }
+
+  .news .news-gather {
+    position: relative;
+    width: 90%;
+    margin: 10px auto;
+    top: 0;
+    left: 0;
+}
+
+  .news-title
+  {
+    font-size: .7em;
+    top: 0;
+  }
+
+  .news-title ul
+  {
+    text-align: center;
+  }
+
+  .news-title ul h1
+  {
+    font-size: 0.9em;
+    margin-top: 35px;
+    margin-bottom: 10px;
+  }
+
+  .news-title ul li 
+  {
+    width: 100%;
+    text-align: left;
+    padding-bottom: 5px;
+    line-height: 1.5em;
+  }
+
+  /* about us section */
+
+  .about
+  {
+    background-image: url('../img/bulk/about_mobile.jpg');
+  }
+
+  .about, .learn, .contact
+  {
+    height: 430px;
+    background-size: cover;
+    background-position: 0% 50%;
+  }
+  .about-us, .learning-centre, .contact-us
+  {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 80%;
+    margin: 20px auto;
+    font-size: 0.8em;
+  }
+
+  .about table, th, td
+  {
+    width: 100%
+  }
+
+  .about table tr th div
+  {
+    font-size: 0.7em;
+    width: 80%;
+    line-height: 2em;
+    padding: 0;
+    margin: 20px auto;
+  }
+
+  .about table tr td > div
+  {
+    margin: 0 45px;
+  }
+
+  /* bulk section */
+
+  .bulk
+  {
+    height: 240px;
+    background-size: cover;
+    background-position: 50% 40%;
+    background-image: url('../img/bulk/bulk_mobile.jpg');
+  }
+
+  .bulk p
+  {
+    font-size: 2.5em;
+    font-weight: normal;
+    width: 80%;
+    margin: 0 auto;
+    bottom: 0;
+    top: 15px;
+  }
+
+  /* protocol section */
+
+  .protocol
+  {
+    height: 340px;
+    background-size: 1000px;
+    background-position: 20% 50%;
+    background-image: url('../img/bulk/protocol_mobile.jpg');
+  }
+
+  .protocol .top
+  {
+    width: 75%;
+    height: 340px;
+  }
+
+  .protocol .top ul
+  {
+    font-size: 1.2em;
+    padding: 0;
+    width: 100%;
+    text-align: left;
+    line-height: 1.6em;
+    margin-left: 15px;
+  }
+  .protocol .top ul li .fa-circle
+  {
+    margin-right: 5px;
+    margin-left: -20px;
+  }
+
+  .protocol .top ul li:nth-child(1), .protocol .top ul li:nth-child(4), .protocol .top ul li:nth-child(7), .protocol .top ul li:nth-child(9)
+  {
+    margin-top: 15px;
+  }
+
+  .protocol .top ul li div:before
+  {
+    padding-left: 0px;
+  }
+
+  .protocol .heart
+  {
+    display: none;
+  }
+
+  /* protocol sub section */
+  .protocol-sub
+  {
+    height: 405.7px;
+  }
+  .protocol-sub a
+  {
+    width: 585.5px;
+    height: 383.1px;
+    margin:10px auto;
+  }
+
+  .protocol-sub img
+  {
+    width: 585.5px;
+    height: 383.1px;
+  }
+
+  /* learning section */
+
+  .learn
+  {
+    height: 550px;
+  }
+
+  .learn table tr th, .contact table tr th
+  {
+    padding-bottom: 0;
+    display: block;
+  }
+
+  .learn table tr th div, .contact table tr th div
+  {
+    width: 90%;
+    line-height: 2.5em;
+    font-size: 0.7em;
+    padding: 0;
+    margin: 20px auto;
+  }
+
+  .learn table tr td > div
+  {
+    height: 20px;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+  }
+
+  .learn table tr:nth-child(7) td div
+  {
+    height: 45px;
+
+  }
+
+  .learn table tr:nth-child(6) td div
+  {
+    margin-bottom: 0;    
+  }
+
+  .learning-centre table, .contact-us table
+  {
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  /* contact us section */
+
+  .contact
+  {
+    background-image: url('../img/bulk/contact_mobile.jpg');
+  }
+  
+  .contact table tr th div
+  {
+    line-height: 2em;
+    width: 100%
+  }
+
+  .contact table tr td > div
+  {
+    width: 100%;
+  }
+
+  .contact-us table
+  {
+        width:100%;
+  }
+    
+   .contact-us td{
+        display:block;
+        width:100%;
+    }
+    
+  .contact-us  tr{
+        display:block;
+    }
+
+  .social_wrapper
+  {
+    margin-bottom: 10px
+  }
+
+  .social_icons
+  {
+    margin-left: 26px;
+  }
+
+
+
+ }
+
+  /* Widescreens */
+@media only screen and (min-width: 992px) and (max-width: 1420px){ 
+
+  .topnav {
+    padding-top: 35px;
+  }
+
+  .topnav li a {
+    padding: 4px 9px 2px 9px;
+    font-size: 1.25em;
+  }
+
+  .learn table tr:nth-child(7) td div {
+    margin-bottom: 27px;
+  }
+
+  .contact table tr:nth-child(2) td:nth-child(2) div {
+    width: 400px;
+  }
+}
+
+ /* The rest */
+@media only screen and (min-width: 1421px) {
+
+  .learn table tr:nth-child(7) td div {
+    margin-bottom: 27px;
+  }
+
+  .contact table tr:nth-child(2) td:nth-child(2) div {
+    width: 400px;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 736px) {
+  .about-us table tr:nth-child(4) td div {
+    height: 60px;
+  }
+
+  .about-us table tr:nth-child(4) span:nth-child(2) {
+    margin-left: 59px;
+  }
+}
+
+@media only screen and (min-width: 737px) {
+  .about-us table tr:nth-child(4) td div br {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 591px) {
+  .about-us table tr:nth-child(4) td div span:nth-child(1) {
+    margin-left: 58px;
+  }
+
+  .about-us table tr:nth-child(4) td div span:nth-child(2) {
+    margin-left: 0 !important;
+  }
+
+  .about-us table tr:nth-child(4) td div br {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  .about-us table tr:nth-child(4) td div {
+    height: 60px;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .about-us table tr:nth-child(3) td div {
+    height: 60px;
+  }
+  
+  .about-us table tr:nth-child(3) td div span {
+    margin-left: 58px;
+  }
+}
+
+@media only screen and (min-width: 427px) {
+  .about-us table tr:nth-child(3) td div br {
+    display: none;
+  }
+}

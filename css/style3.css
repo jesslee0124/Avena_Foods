@@ -1,0 +1,1904 @@
+/* COLOR BLOCK
+White: #ffffff
+Orange: #d98e02
+Brown: #7f4f21
+Faded Black: #19191a
+Dark Grey: #333333;
+Black: #000000;
+Menu: #4f4c4d
+Blue: #01306f;
+*/
+
+@font-face {
+  font-family: 'Rockwell';
+  src: url('../src/fonts/Rockwell/RockwellStd.otf') format('opentype');
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  color: #ffffff;
+  font-size: 13px;
+  font-family: Rockwell;
+  overflow-x: hidden;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  
+  -webkit-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  
+  height: 3780px;
+  width: 100%;
+}
+
+.main {
+  position: relative;
+  background-color: #93bad4;
+  height: 10.38741%;
+  margin-top: 70px;
+}
+
+.news {
+  position: relative;
+  background-color: #1383b4;
+  height: 6.85956%;
+}
+
+.products {
+  position: relative;
+  background-color: pink;
+  height: 22.15981%;
+  background-image: url('../img/oats/oats-products.jpg');
+  background-repeat: no-repeat;
+  background-size: 2100px;
+  background-position: 52% 45%;
+}
+
+.protocol {
+  position: relative;
+  background-color: #fffbf2;
+  height: 15.98452%;
+}
+
+.protocol a {
+  margin: 0 auto;
+}
+
+.protocol img {
+  overflow: hidden;
+  position: absolute;
+  width: 940px;
+  height: 550px;
+  left: 50%;
+  right: 50%;
+  margin: 10px 0 0 -470px;
+}
+
+.contact {
+  position: relative;
+  background-color: skyblue;
+  height: 13.83777%;
+  background-image: url('../img/oats/oats-contact.jpg');
+  background-repeat: no-repeat;
+  background-size: 1160px; 
+  background-position: 57% 24%;
+}
+
+.info {
+  position: relative;
+  background-color: blue;
+  height: 9.26150%;
+  background-image: url('../img/oats/oats-info.jpg');
+  background-repeat: no-repeat;
+  background-size: 1300px; 
+  background-position: 28% 88%;
+}
+
+.about {
+  position: relative;
+  background-color: black;
+  height: 20.03874%;
+  background-image: url('../img/oats/oats-about.jpg');
+  background-repeat: no-repeat;
+  background-size: 1300px;
+  background-position: 90% 22%;
+}
+
+.header
+{
+  height: 80px;
+  width: 100%;
+  position: fixed;
+  background: white;
+  top: 0;
+  z-index: 1500;
+
+}
+
+.header-logo
+{
+  display: block;
+  position: absolute;
+  left: 40px;
+  top: 11.5px;
+}
+
+.header-menu {
+  position: absolute;
+  font-size: 1.2em;
+  font-weight: bold;
+  right: 60px;
+  top: 8px;
+  word-wrap: break-word;
+}
+
+.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-top: 30px;
+    overflow: hidden;
+    float: right;
+}
+
+.topnav li {
+    display: inline;
+}
+
+.topnav li.hidden a {
+  width: 220px;
+  display: none;
+}
+
+.topnav li.hidden a:after {
+  font-family: FontAwesome;
+  content: '\f0c9';
+  text-align: right;
+  float: right;
+}
+
+.topnav li a {
+  display: block;
+  float: left;
+  padding: 8px 16px 4px 16px;
+  color: #53453d;
+  text-decoration: none;
+  text-align: center;
+  font-size: 1.4em;
+  border-right: 1px #CECAC8 solid;
+}
+
+.topnav li:last-child a {
+  border-right: none;
+}
+
+.topnav .menu li a:hover {
+  font-weight: bolder;
+  color: white;
+  background-color: #87CEEB;
+}
+
+/*
+.menu-btn {
+    font-family: Rockwell;
+    background: white;
+    color: #53453d;
+    padding: 20px;
+    font-size: 1.3em;
+    border: none;
+    cursor: pointer;
+}
+
+.menu-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.8);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    font-size: 1em;
+    top: 68px;
+}
+
+.menu-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.menu-content a:hover {background-color: #f1f1f1}
+
+.header-menu:hover .menu-content {
+    display: block;
+}
+
+.menu-btn:before 
+{
+  font-family: FontAwesome;
+  content: '\f0c9';
+  margin-right: 5px;
+}
+*/
+/* MAIN SECTION */
+.main-top {
+  height: 5px;
+  background-color: #93bad4;
+}
+
+.main .wrapper {
+  width: 100%;
+  height: 98.83450%;
+  background-image: url('../img/oats/main-left.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.main-left {
+  position: absolute;
+  width: 494px;
+  height: 424px;
+  left: 50%;
+  top: 50%;
+  margin: -212px 0 0 -530px;
+  text-align: center;
+}
+
+.main-left img {
+  width: 378px;
+  height: 110px;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.main-left .main-title p {
+  color: #19191a;
+  font-size: 261.53846%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  line-height: 1em;
+}
+
+.main-left .main-title h4 {
+  color: #d98e02;
+  font-size: 132.30769%;
+  margin-top: 32px;
+  letter-spacing: 0.28em;
+}
+
+.main-right {
+  position: absolute;
+  width: 494px;
+  height: 390px;
+  left: 50%;
+  top: 50%;
+  padding: 0;
+  margin: -191px 0 0 -5px;
+  background-image: url('../img/oats/loop.gif');
+  background-repeat: no-repeat;
+}
+
+/* NEWS SECTION */
+.news-centre {
+  position: absolute;
+  width: 735px;
+  height: 132px;
+  left: 50%;
+  top: 50%;
+  margin: -45px 0 0 -357.5px;
+}
+
+.news-centre ul {
+  padding: 0 0;
+  margin: 0 0;
+  font-size: 238.46153%;
+  font-weight: bold;
+}
+
+.news-centre ul li {
+  font-family: verdana;
+  font-size: 64.51612%;
+  margin-left: 1.68473%;
+  font-weight: normal;
+}
+
+.news-centre ul li:nth-child(1) {
+  padding-bottom: 10px;
+}
+
+.news .social {
+  position: absolute;
+  width: 400px;
+  height: 40px;
+  left: 50%;
+  top: 50%;
+  margin: -110px 0 0 250px;
+}
+
+.news .social table td {
+  font-family: FontAwesome;
+  font-size: 550%;
+  padding-right: 10px;
+  cursor: pointer;
+}
+
+.news .social table td a {
+  color: #ffffff;
+}
+
+.news .social table td a,
+.news .social table td a:visited,
+.news .social table td a:hover, 
+.news .social table td a:focus,
+.news .social table td a:active {
+    text-decoration: none;
+}
+
+.news .social table td .fa-facebook-square:hover {
+  color: #3b5998;
+}
+
+.news .social table td .fa-twitter-square:hover {
+  color: #00aced;
+}
+
+.news .social table td .fa-pinterest-square:hover {
+  color: #cb2027;
+}
+
+/* PRODUCTS SECTION */
+.products-top {
+  position: absolute;
+  width: 856px;
+  height: 552px;
+  margin: 0 auto;
+  left: 50%;
+  top: 50%;
+  margin: -390px 0 0 -428px;
+}
+
+.products-top .logo {
+  position: absolute;
+  width: 170px;
+  height: 57px;
+}
+
+.products-top h3 {
+  display: inline-block;
+  color: #01306f;
+  font-size: 194.384612%;
+  padding-top: 7px;
+  border-top: 2px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
+  margin-bottom: 0;
+  margin-top: 0.5%;
+  margin-left: 24.5%;
+}
+
+.products-top .locator {
+  position: absolute;
+  display: inline-block;
+  margin-left: -2%;
+  margin-top: -4.5%;
+  padding-left: 43px;
+}
+
+.products-top .locator img {
+  width: 110px;
+  height: 140px;
+  cursor: pointer;
+}
+
+.products-top .locator:hover .locator-list {
+  display: block;
+}
+
+.locator-list {
+  display: none;
+  position: absolute;
+  background-color: #87CEEB;
+  font-size: 149.23077%;
+  min-width: 200px;
+  z-index: 999;
+  margin-left: -53px;
+  margin-top: -24px;
+  text-align: center;
+}
+
+.locator-list a {
+  color: #fff;
+  padding: 14px 12px 8px 12px;
+  text-decoration: none;
+  display: block;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all .25s ease;
+}
+
+.locator-list a:last-child {
+  border-bottom: none;
+}
+
+.locator-list a:hover {
+  color: #87CEEB;
+  background-color: #fff;
+}
+
+.products-top ul {
+  float: left;
+  color: #333333;
+  font-size: 169.23077%;
+  width: 740px;
+  padding: 0;
+  margin: 0;
+  padding-top: 11px;
+  list-style: none;
+}
+
+.products-top .sub {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-between;
+}
+
+.products-top .products-table {
+  position: absolute;
+  top: 17.33333%;
+  width: 85.41667%;
+  margin-top: 40px;
+}
+
+.products-top .products-table tr div {
+  text-align: center;
+  vertical-align: center;
+}
+
+.products-top .products-table tr:nth-child(even) div {
+  text-align: center;
+  color: #000000;
+  font-weight: bolder;
+}
+
+.products-top .products-table tr:nth-child(4) td:nth-child(1) div {
+  color: transparent;
+}
+
+.products-middle {
+  position: absolute;
+  width: 210px;
+  height: 212px;
+  margin: 0 auto;
+  left: 50%;
+  top: 50%;
+  margin: 225px 0 0 -420px;
+}
+
+.products-bottom {
+  position: absolute;
+  width: 188px;
+  height: 144px;
+  margin: 0 auto;
+  left: 50%;
+  top: 50%;
+  margin: 250px 0 0 270px;
+}
+
+.products-bottom img {
+  float: left;
+  width: 70px;
+  height: 70px;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+
+/* CONTACT SECTION */
+.contact .center {
+  position: absolute;  
+  width: 834px;
+  height: 480px;
+  margin: 0 auto;
+  left: 50%;
+  top: 50%;
+  margin: -240px 0 0 -487px;
+}
+
+.contact .center .top {
+  width: 820px;
+  float: left;
+  margin-bottom: 25px;
+}
+
+.contact .center .top p {
+  font-size: 239.23077%;
+  font-weight: bold;
+  padding: 12px 28px 4px 50px;
+}
+
+.contact .center .bottom {
+  float: left;
+  font-size: 200.23077%;
+  line-height: 1.4em;
+  width: 300px;
+  height: 208px;
+  position: relative;
+  bottom: 40px;
+  left: 10px;
+  font-weight: bold;
+}
+
+.contact .center .bottom ul .list {
+  padding-left: 20px;
+}
+
+.contact .center .bottom ul li {
+  width: 320px;
+  padding-left: 20px;
+}
+
+.contact .center .bottom ul li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.contact .fa-twitter:hover {
+  color: #4099FF;
+  cursor: pointer;
+}
+
+.contact .fa-pinterest:hover {
+  color: #cb2027;
+  cursor: pointer;
+}
+
+.contact .fa-facebook:hover {
+  color: #3b5998;
+  cursor: pointer;
+}
+
+.contact .fa-twitter,
+.contact .fa-pinterest,
+.contact .fa-facebook {
+  padding-left: 5px
+}
+
+/* INFO SECTION */
+.info .wrapper {
+  background-color: rgba(255, 255, 255, 0.8);
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: 0;
+  color: black;
+}
+
+.info .gather {
+  position: absolute;
+  width: 834px;
+  height: 308px;
+  margin: 0 auto;
+  left: 50%;
+  top: 50%;
+  margin: -184px 0 0 -467px;
+}
+
+.info .wrapper .title {
+  width: 499px;
+  height: 70px;
+  margin-left: 50px;
+  margin-bottom: 50px;
+}
+
+.info .wrapper .title p {
+  font-size: 369.23077%;
+  padding: 12px 28px 4px 28px;
+  border: 1px solid #000000;
+}
+
+.info .wrapper .left {
+  position: absolute;
+  left: 5.18333%;
+  top: 36.32877%;
+  width: 396px;
+  height: 200px;
+  font-size: 184.61538%;
+  line-height: 1.6em;
+}
+
+.info .wrapper .right {
+  position: absolute;
+  left: 51.83333%;
+  top: 36.32877%;
+  width: 450px;
+  height: 140px;
+  font-size: 184.61538%;
+  line-height: 1.6em;
+}
+
+.info .wrapper .right ul li:nth-child(3) {
+  line-height: 1.3em;
+}
+
+.info .wrapper .left ul li:nth-child(5) {
+  padding-top: 0.4em;
+  line-height: 1em;
+}
+
+.info .wrapper .left ul li span,
+.info .wrapper .right ul li span {
+  position: relative;
+  left: 20px;
+}
+
+.info .wrapper ul li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.info .wrapper img {
+  position: relative;
+  float: right;
+  right: -6%;
+  bottom: -37%;
+  width: 224px;
+  height: 64px;
+}
+
+/* LEARN SECTION - MODAL */
+.info .modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
+  z-index: 9999;
+}
+
+.info .modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 70%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+.info .close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.info .close:hover,
+.info .close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.info .modal-header {
+  padding: 2px 16px;
+  background-color: #87CEEB;
+  color: white;
+}
+
+.info .modal-header h2 {
+  font-size: 250%;
+  padding-left: 40px;
+}
+
+.info .modal-body {
+  padding: 2px 16px;
+}
+
+.info .modal-body form {
+  max-width: 50%;
+  text-align: center;
+  margin: 20px auto;
+}
+
+.info .modal-body input, 
+.info .modal-body textarea {
+  border: 0;
+  outline: 0;
+  padding: 1em;
+  border-radius: 8px;
+  display: block;
+  width: 100%;
+  margin-top: 1em;
+  resize: none;
+  box-shadow: 0 1px 1px rgba(1, 1, 1, 0.1);
+  font-size: 140%;
+}    
+
+.info .modal-body .submit {
+  color: white; 
+  background-color: #87CEEB;
+  cursor: pointer;
+  width: 30%;
+  margin: 30px auto;
+}
+
+.info .modal-body .submit:hover {
+  background-color: #93d2ed;
+}
+
+/* ABOUT SECTION */
+.about-us {
+  position: absolute;
+  top: 46.68085%;
+  left: 6.33333%;
+  right: 50%;
+  width: 80%;
+}
+
+.about table, th, td {
+  text-align: left;
+}
+
+.about table tr th div {
+  overflow: hidden;
+  height: 45px;
+}
+
+.about table tr td > div {
+  overflow: hidden;
+  height: 40px;
+}
+
+.about table tr th {
+  font-size: 369.23077%;
+  font-weight: normal;
+  padding-bottom: 20px;
+  vertical-align: top !important;
+}
+
+.about table tr th div {
+  width: 211px;
+  border: 1px solid white;
+  padding: 8px 20px 12px 25px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.about table tr td {
+  font-size: 169.23077%;
+  font-weight: bold;
+  vertical-align: middle !important;
+}
+
+.about table tr td a:hover,
+.about table tr td a:visited,
+.about table tr td a:link,
+.about table tr td a:active {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.about table tr td img {
+  position: relative;
+  top: 6px;
+}
+
+/* MEDIA QUERIES */
+@media only screen and (min-width: 1161px) {
+  .contact {
+    background-size: cover;
+  }
+}
+
+@media only screen and (min-width: 1301px) {
+  .info,
+  .about {
+    background-size: cover;
+  }
+}
+
+@media only screen and (max-width: 1350px) {
+  .info .modal {
+    padding-top: 5px;  
+  }
+
+  .info .modal-body input, 
+  .info .modal-body textarea {
+    height: 50%;
+    font-size: 100%;
+  }    
+
+  .info .modal-body textarea {
+    height: 125px;
+  }
+}
+
+@media only screen and (min-width: 1551px) {
+  .protocol {
+    background-size: cover;
+  }
+}
+
+@media only screen and (min-width: 2101px) {
+  .products {
+    background-size: cover;
+  }
+}
+
+@media only screen and (max-width: 411px) {
+  .about-us table tr:nth-child(4) td div span:nth-child(1) {
+    margin-left: 58px;
+  }
+
+  .about-us table tr:nth-child(4) td div span:nth-child(2) {
+    margin-left: 0 !important;
+  }
+
+  .about-us table tr:nth-child(4) td div br {
+    display: none;
+  }
+} 
+
+/* iPhone 6 Plus and smaller */
+@media only screen and (min-width: 320px) and (max-width: 479px){ 
+
+  .header
+  {
+    height: 50px;
+  }
+
+  .header-logo
+  {
+    top: 7.5px;
+    left: 10px;
+  }
+
+  .header-logo > a > img
+  {
+    height: 30px;
+  }
+
+  .topnav {
+    padding-top: 10px;
+  }
+
+  .topnav li {
+    display: block;
+  }
+
+  .topnav li a {
+    border: none;
+    display: none;
+  }
+
+  .topnav li.hidden a {
+    display: block;
+  }
+
+  .topnav:hover li a {
+    display: block;
+    width: 200px;
+  }
+
+  .topnav .menu li a {
+    background-color: white;
+    font-size: 1.2em;
+  }
+
+  .topnav .menu li a:hover {
+    background-color: #87CEEB;
+  }
+
+  .menu-btn
+  {
+    font-size: 1.0em;
+    padding: 0px;
+    position: absolute;
+    top: 7.5px;
+    right: -40px;
+  }
+
+  .menu-content
+  {
+    top: 42px;
+    right: -60px;
+    min-width: 140px;
+  }
+
+  /* MAIN SECTION */
+
+  .main
+  {
+    margin-top: 40px;
+  }
+  .main-left {
+    width: 318px;
+    margin: -212px 0 0 -161px;
+    z-index: 3;
+  }
+
+  .main-left img {
+    width: 318px;
+  }
+
+  .main-left .main-title p {
+    font-size: 236.53846%;
+  }
+
+  .main-left .main-title h4 {
+    font-size: 108.30769%;
+  }
+
+  .main-right {
+    width: 480px;
+    height: 424px;
+    margin: -192px 0 0 -235px;
+  }
+
+  .main .background {
+    background-color: rgba(255, 255, 255, 0.6);
+    width: 469px;
+    height: 424px;
+    top: 50%;
+    margin: 0px 0 0 0px;
+    z-index: 1;
+  }
+  
+  /* News Section */
+    .news-centre {
+      width: 318px;
+      top: 49%;
+      margin: -45px 0 0 -140px;
+    }
+
+    .news-centre ul {
+      font-size: 189.46153%;
+    }
+
+    .news .social {
+      width: 300px;
+      height: 30px;
+      top: 45%;
+      margin: -110px 0 0 -92px;
+    }
+
+    .news .social table td {
+      font-size: 470%;
+    }
+
+    /* PRODUCTS SECTION */
+    .products {
+      height: 26.15981%;
+      background-position: 52% 29%;
+      background-image: url('../img/oats/oats-products_mobile.jpg');
+    }
+
+    .products-top {
+      width: 318px;
+      margin: -438px 0 0 -194px;
+    }
+
+    .products-top .logo {
+      top: -30px;
+      left: 53px;
+    }
+
+    .products-top h3 {
+      font-size: 102.384612%;
+      margin-top: 8.5%;
+      margin-left: 12%;
+      width: 318px;
+      text-align: center;
+    }
+
+    .locator {
+      position: absolute !important;
+      display: inline-block;
+      margin-left: 79.7% !important;
+      margin-top: -31% !important;
+    }
+
+    .products-top .locator img {
+      width: 62px;
+      height: 73px;
+    }
+
+    .locator-list {
+      font-size: 107.23077%;
+      margin-left: -150px;
+      margin-top: -12px;
+    }
+
+    .products-top ul {
+      font-size: 83.23077%;
+      width: 318px;
+      padding-top: 15px;
+      margin-left: 39px;
+    }
+
+    .products-top .products-table {
+      margin-left: 32px;
+    }
+
+
+    .products-top .products-table tr:nth-child(even) div {
+      text-align: center;
+    }
+
+    .products-top .products-table img {
+      width: 90px;
+      height: 120px;
+    }
+
+    .products-top .products-table tbody {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      padding: 0;
+      font-size: 0.9em;
+    } 
+
+    .products-top .products-table tr td {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      flex: column nowrap;
+    }
+
+    .products-top .products-table tr:nth-child(2) td > *,
+    .products-top .products-table tr:nth-child(4) td > * {
+      width: 66px;
+      height: 126px;
+      padding: 50% 0 12% 0;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      vertical-align: -webkit-baseline-top;
+    }
+
+    .products-top .products-table tr:nth-child(3) td:nth-child(1),
+    .products-top .products-table tr:nth-child(4) td:nth-child(1) {
+      display: none;
+    }
+
+    .products-middle {
+      display: none;
+    }
+
+    .products-bottom {
+      margin: 345px 0 0 -96px;
+    }
+
+    .products-bottom img {
+      width: 37px;
+      height: 58px;
+    }
+
+  /* PROTOCOL SECTION */
+    .protocol {
+      height: 11.98452%;
+    }
+
+    .protocol img {
+      width: 379px;
+      height: 357px;
+      margin: 42px 0 0 -189px;
+    }
+
+  /* CONTACT SECTION */
+
+    .contact{
+      background-image: url('../img/oats/oats-contact_mobile.jpg');
+    }
+    .contact .center {
+      width: 318px;
+      margin: -260px 0 0 -198px;
+    }
+
+    .contact .center .top {
+      width: 350px;
+      margin-top: 22px;
+      font-size: 0.9em;
+    }
+
+    .contact .center .top p {
+      font-size: 191.23077%;
+    }
+
+    .contact .center .bottom {
+      font-size: 151.23077%;
+      line-height: 1.6em;
+      top: -40px;
+    }
+
+  /* INFO SECTION */
+    .info {
+      height: 11.26150%;
+      background-image: url('../img/oats/oats-info_mobile.jpg');
+    }
+
+    .info .gather {
+      width: 318px;
+      margin: -213px 0 0 -331px;
+    }
+
+    .info .wrapper .title {
+      width: 300px;
+      margin-left: 181px;
+      text-align: center;
+    }
+
+    .info .wrapper .title p {
+      font-size: 208.23077%;
+    }
+
+    .info .wrapper .left {
+      left: 50.18333%;
+      top: 27.32877%;
+      font-size: 128.61538%;
+    }
+
+    .info .wrapper .right {
+      left: 50%;
+      top: 77.32877%;
+      font-size: 128.61538%;
+    }
+
+    .info .wrapper img {
+      right: -52%;
+      bottom: -66%;
+    }
+
+    .info .wrapper .left ul li span, 
+    .info .wrapper .right ul li span {
+      position: relative;
+      left: 0px;
+    }
+
+    .info .modal-header h2 {
+      font-size: 213%;
+      padding-left: 13px;
+    }
+
+    .info .modal-body {
+      height: 450px;
+    }
+
+    .info .moda-body form {
+      margin: 20px 0 30px 21px;
+    }
+
+    .info .modal-body .submit {
+      position: absolute;
+      width: 130px;
+      height: 40px;
+      left: 50%;
+      top: 50%;
+      margin: 208px 0 0 -66px;
+      padding: 0;
+    }
+
+  /* ABOUT SECTION */
+
+    .about{
+      background-image: url('../img/oats/oats-about_mobile.jpg');
+    }
+
+    .about-us {
+      top: 29.68085%;
+      left: -6.33333%;
+      width: 100%;
+    }
+
+    .about table tr th {
+      font-size: 208.23077%;
+    }
+
+    .about table tr th div {
+      width: 250px;
+      padding: 22px 20px 0px 25px;
+      text-align: center;
+      margin-left: 29px;
+    }
+
+    .about table tr td {
+      font-size: 135.23077%;
+      padding-left: 31px;
+    }
+
+    .about-us table tr:nth-child(4) td div {
+      height: 60px;
+    }
+
+    .about-us table tr:nth-child(4) td div span:nth-child(2) {
+      margin-left: 58px;
+    }
+
+ }
+
+  /* Regular iPad and iPad mini or other tablets */
+@media only screen and (min-width: 480px) and (max-width: 767px){ 
+  
+  /* HEADER SECTION */
+  /*  .header-logo img {
+      position: absolute;
+      width: 183px;
+      height: 44px;
+      left: 6.29167%;
+      padding-top: 20px;
+    }
+
+    .header-menu {
+      position: absolute;
+      color: #53453d;
+      font-size: 140.6923%;
+      font-weight: bold;
+      right: 8.29167%;
+      top: 49.03797%;
+      word-wrap: break-word;
+    } 
+
+    .header-menu ul ul {
+      top: 20px;
+      font-size: 90%;
+      text-align: left;
+    }*/
+      .header
+  {
+    height: 50px;
+  }
+
+      .header-logo
+  {
+    top: 7.5px;
+    left: 10px;
+  }
+
+  .header-logo > a > img
+  {
+    height: 30px;
+  }
+
+  .topnav {
+    padding-top: 10px;
+  }
+
+  .topnav li {
+    display: block;
+  }
+
+  .topnav li a {
+    border: none;
+    display: none;
+  }
+
+  .topnav li.hidden a {
+    display: block;
+  }
+
+  .topnav:hover li a {
+    display: block;
+    width: 200px;
+  }
+
+  .topnav .menu li a {
+    background-color: white;
+    font-size: 1.2em;
+  }
+
+  .topnav .menu li a:hover {
+    background-color: #87CEEB;
+  }
+
+  .menu-btn
+  {
+    font-size: 1.0em;
+    padding: 0px;
+    position: absolute;
+    top: 7.5px;
+    right: -40px;
+  }
+
+  .menu-content
+  {
+    top: 42px;
+    right: -60px;
+    min-width: 140px;
+  }
+
+
+  /* MAIN SECTION */
+
+  .main
+  {
+    margin-top: 40px;
+  }
+    .main-left {
+      margin: -212px 0 0 -252px;
+      z-index: 3;
+    }
+
+    .main-right {
+      width: 480px;
+      height: 424px;
+      margin: -192px 0 0 -235px;
+    }
+
+    .main .background {
+      background-color: rgba(255, 255, 255, 0.6);
+      width: 469px;
+      height: 424px;
+      top: 50%;
+      margin: 0px 0 0 0px;
+      z-index: 1;
+    }
+  
+  /* News Section */
+    .news-centre {
+      width: 450px;
+      top: 54%;
+      margin: -45px 0 0 -212px;
+    }
+
+    .news-centre ul {
+      font-size: 198.46153%;
+    }
+
+    .news .social {
+      width: 300px;
+      height: 30px;
+      top: 45%;
+      margin: -110px 0 0 -106px;
+    }
+
+    .news .social table td {
+      font-size: 470%;
+    }
+
+    /* PRODUCTS SECTION */
+    .products {
+      height: 26.15981%;
+      background-position: 52% 29%;
+      background-image: url('../img/oats/oats-products_mobile.jpg');
+    }
+
+    .products-top {
+      width: 460px;
+      margin: -438px 0 0 -276px;
+    }
+
+    .products-top .logo {
+      top: -18px;
+      left: 71px;
+    }
+
+    .products-top h3 {
+      font-size: 157.384612%;
+      margin-top: 9%;
+      margin-left: 12%;
+      width: 450px;
+      text-align: center;
+    }
+
+    .locator {
+      position: absolute !important;
+      display: inline-block;
+      margin-left: 86.7% !important;
+      margin-top: -24% !important;
+    }
+
+    .products-top .locator img {
+      width: 70px;
+      height: 80px;
+    }
+
+    .locator-list {
+      font-size: 107.23077%;
+      margin-left: -121px;
+      margin-top: -12px;
+    }
+
+    .products-top ul {
+      font-size: 116.23077%;
+      width: 460px;
+      padding-top: 15px;
+      margin-left: 50px;
+    }
+
+    .products-top .products-table {
+      margin-left: 40px;
+    }
+
+
+    .products-top .products-table tr:nth-child(even) div {
+      text-align: left;
+    }
+
+    .products-top .products-table img {
+      width: 90px;
+      height: 120px;
+    }
+
+    .products-top .products-table tbody {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      padding: 0;
+    } 
+
+    .products-top .products-table tr td {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      flex: column nowrap;
+    }
+
+    .products-top .products-table tr:nth-child(2) td > *,
+    .products-top .products-table tr:nth-child(4) td > * {
+      width: 138px;
+      height: 126px;
+      padding: 30% 0 12% 0;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      vertical-align: -webkit-baseline-top;
+    }
+
+    .products-top .products-table tr:nth-child(3) td:nth-child(1),
+    .products-top .products-table tr:nth-child(4) td:nth-child(1) {
+      display: none;
+    }
+
+    .products-middle {
+      display: none;
+    }
+
+    .products-bottom {
+      margin: 300px 0 0 59px;
+    }
+
+  /* PROTOCOL SECTION */
+    .protocol {
+      height: 11.98452%;
+    }
+
+    .protocol img {
+      width: 441px;
+      height: 430px;
+      margin: 4px 0 0 -220px;
+    }
+
+  /* CONTACT SECTION */
+    .contact{
+        background-image: url('../img/oats/oats-contact_mobile.jpg');
+      }
+
+    .contact .center {
+      width: 460px;
+      margin: -240px 0 0 -263px;
+    }
+
+    .contact .center .top {
+      width: 460px;
+      margin-top: 10px;
+      margin-left: 30px;
+    }
+
+    .contact .center .top p {
+      font-size: 199.23077%;
+    }
+
+    .contact .center .bottom {
+      font-size: 170.23077%;
+      line-height: 1.6em;
+    }
+
+  /* INFO SECTION */
+    .info {
+      height: 11.26150%;
+      background-image: url('../img/oats/oats-info_mobile.jpg');
+    }
+
+    .info .gather {
+      width: 460px;
+      margin: -213px 0 0 -467px;
+    }
+
+    .info .wrapper .title {
+      width: 424px;
+      margin-left: 254px;
+      text-align: center;
+    }
+
+    .info .wrapper .title p {
+      font-size: 239.23077%;
+    }
+
+    .info .wrapper .left {
+      left: 52.18333%;
+      top: 27.32877%;
+      font-size: 140.61538%;
+    }
+
+    .info .wrapper .left ul li:nth-child(5) {
+      padding-top: 0.2em;
+    }
+
+    .info .wrapper .right {
+      left: 52%;
+      top: 84.32877%;
+      font-size: 140.61538%;
+    }
+
+    .info .wrapper img {
+      right: -52%;
+      bottom: -66%;
+    }
+
+    .info .modal-header h2 {
+      font-size: 213%;
+      padding-left: 13px;
+    }
+
+    .info .modal-body {
+      height: 450px;
+    }
+
+    .info .moda-body form {
+      margin: 20px 0 30px 21px;
+    }
+
+    .info .modal-body .submit {
+      position: absolute;
+      width: 130px;
+      height: 40px;
+      left: 50%;
+      top: 50%;
+      margin: 208px 0 0 -66px;
+      padding: 0;
+    }
+
+  /* ABOUT SECTION */
+
+    .about{
+          background-image: url('../img/oats/oats-about_mobile.jpg');
+    }
+
+    .about-us {
+      top: 29.68085%;
+      left: 5.33333%;
+    }
+  
+    .about table tr th {
+      font-size: 239.23077%;
+    }
+
+    .about table tr th div {
+      width: 372px;
+      padding: 13px 20px 0px 25px;
+      text-align: center;
+    }
+
+    .about table tr td {
+      font-size: 153.23077%;
+    }
+
+    /*.about table tr:nth-child(4) td div {
+      white-space: normal;
+      height: 70px;
+    }
+
+    .about table tr:nth-child(4) td div span {
+      text-indent: 20px;
+    }*/
+
+ }
+
+ /* Laptops and small browsers */
+@media only screen and (min-width: 768px) and (max-width: 991px){ 
+  
+  /* HEADER SECTION */
+    /*.header-logo img {
+      position: absolute;
+      width: 222px;
+      height: 45px;
+      left: 4.29167%;
+      padding-top: 20px;
+    }
+
+    .header-menu {
+      position: absolute;
+      color: #53453d;
+      font-size: 171.6923%;
+      font-weight: bold;
+      right: 5.29167%;
+      top: 47.03797%;
+      word-wrap: break-word;
+    } 
+
+    .header-menu ul ul {
+      top: 24px;
+      font-size: 80%;
+    }*/
+
+  .header
+  {
+    height: 50px;
+  }
+
+      .header-logo
+  {
+    top: 7.5px;
+    left: 10px;
+  }
+
+  .header-logo > a > img
+  {
+    height: 30px;
+  }
+
+  .topnav {
+    padding-top: 10px;
+  }
+
+  .topnav li {
+    display: block;
+  }
+
+  .topnav li a {
+    border: none;
+    display: none;
+  }
+
+  .topnav li.hidden a {
+    display: block;
+  }
+
+  .topnav:hover li a {
+    display: block;
+    width: 200px;
+  }
+
+  .topnav .menu li a {
+    background-color: white;
+    font-size: 1.2em;
+  }
+
+  .topnav .menu li a:hover {
+    background-color: #87CEEB;
+  }
+
+  .menu-btn
+  {
+    font-size: 1.0em;
+    padding: 0px;
+    position: absolute;
+    top: 7.5px;
+    right: -40px;
+  }
+
+  .menu-content
+  {
+    top: 42px;
+    right: -60px;
+    min-width: 140px;
+  }
+
+  /* MAIN SECTION */
+  .main
+  {
+    margin-top: 40px;
+  }
+
+    .main-left {
+      width: 350px;
+      margin: -212px 0 0 -375px;
+    }
+
+    .main-right {
+      width: 350px;
+      margin: -191px 0 0 20px;
+    }
+
+  /* NEWS SECTION */
+    .news .social {
+      margin: -110px 0 0 150px;
+    }
+
+  /* PRODUCTS SECTION */
+
+    .products{
+      background-image: url('../img/oats/oats-products_mobile.jpg');
+    }
+
+    .products-top {
+      width: 756px;
+      margin: -390px 0 0 -358px;
+    }
+
+    .products-top .logo {
+      width: 130px;
+      height: 50px;
+    }
+
+    .products-top h3 {
+      font-size: 164.384612%;
+      margin-left: 20.5%;
+    }
+
+    .products-top .locator {
+      float: right;
+      margin-top: -22px;
+      margin-right: 72px;
+    }
+
+    .products-top .locator img {
+      width: 70px;
+      height: 80px;
+    }
+
+    .locator-list {
+      font-size: 129.23077%;
+      margin-top: -15px;
+      margin-left: -135px;
+    }
+
+    .products-top ul {
+      font-size: 149.23077%;
+      width: 680px;
+      padding-top: 24px;
+    }
+
+    .products-top .products-table {
+      margin-top: 40px;
+    }
+
+    .products-top .products-table img {
+      width: 128px;
+      height: 142px;
+    }
+
+    .products-middle {
+      margin: 225px 0 0 -390px;
+    }
+
+    .products-bottom {
+      margin: 250px 0 0 217px;
+    }
+
+  /* Protocol Section */
+    .protocol img {
+      width: 750px;
+      margin: 10px 0 0 -374px;
+    }
+
+  /* Contact Section */
+    .contact .center {
+      margin: -240px 0 0 -410px;
+    }
+
+    .contact{
+      background-image: url('../img/oats/oats-contact_mobile.jpg');
+    }
+    
+  /* INFO SECTION */
+
+  .info{
+    background-image: url('../img/oats/oats-info_mobile.jpg');
+  }
+
+    .info .gather {
+      width: 620px;
+      margin: -184px 0 0 -410px;
+    }
+
+    .info .wrapper .title {
+      width: 430px;
+    }
+
+    .info .wrapper .title p {
+      font-size: 310.23077%;
+      padding: 12px 15px 4px 37px;
+    }
+
+    .info .wrapper .left {
+      top: 40.32877%;
+      width: 356px;
+      font-size: 154.61538%;
+      line-height: 1.5em;
+    }
+
+    .info .wrapper .right {
+      left: 59.83333%;
+      top: 40.32877%;
+      width: 350px;
+      font-size: 154.61538%;
+      line-height: 1.5em;
+    }
+
+    .info .wrapper img {
+      right: -25%;
+      bottom: -43%;
+      width: 180px;
+    }
+
+  /* ABOUT SECTION */
+
+    .about{
+      background-image: url('../img/oats/oats-about_mobile.jpg');
+    }
+  
+    .about table tr th {
+      font-size: 310.23077%;
+      text-align: center;
+      padding-bottom: 13px;
+    }
+
+    .about table tr th div {
+      padding: 14px 20px 4px 25px;
+    }
+
+ }
+
+ /* Widescreens */
+@media only screen and (min-width: 992px) and (max-width: 1420px){ 
+  /* Enter code here */
+  .topnav {
+    padding-top: 35px;
+  }
+
+  .topnav li a {
+    padding: 4px 9px 2px 9px;
+    font-size: 1.25em;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 696px) {
+  .about-us table tr:nth-child(4) td div {
+    height: 60px;
+  }
+
+  .about-us table tr:nth-child(4) span:nth-child(2) {
+    margin-left: 59px;
+  }
+}
+
+@media only screen and (min-width: 697px) {
+  .about-us table tr:nth-child(4) td div br {
+    display: none;
+  }
+}
